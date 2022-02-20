@@ -76,6 +76,9 @@ class ContaUniversitaria extends ContaBancaria {
     }
 }
 
+/**
+ * Exemplo 1: objeto conta-corrente
+ */
 const minhaConta = new ContaCorrente(1,234,true);
 console.log(minhaConta);
 console.log(minhaConta.saldo);
@@ -83,14 +86,18 @@ console.log(minhaConta.depositar(1500));
 console.log(minhaConta.sacar(250));
 console.log(minhaConta.sacar(1300));
 
-
+/**
+ * Exemplo 2: objeto conta-poupança
+ */
 const contaPoup = new ContaPoupanca(1,235);
 console.log(contaPoup);
 console.log(contaPoup.saldo);
 console.log(contaPoup.depositar(1500));
 console.log(contaPoup.sacar(375));
 
-
+/**
+ * Exemplo 3: objeto conta-universitária
+ */
 const contaUniv = new ContaUniversitaria(1,236);
 console.log(contaUniv);
 console.log(contaUniv.saldo);
